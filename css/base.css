@@ -1,0 +1,533 @@
+body{
+    background-color: #f6f6f6;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h5,p,span,a,ol{
+    margin: 0;
+    padding: 0;
+}
+input,button{
+    padding: 0;
+    border: 0;
+}
+/* 京东主色调 */
+.main_style_red{
+    color:#f10215!important;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?q7a1t3');
+    src:  url('../fonts/icomoon.eot?q7a1t3#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?q7a1t3') format('truetype'),
+      url('../fonts/icomoon.woff?q7a1t3') format('woff'),
+      url('../fonts/icomoon.svg?q7a1t3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* 清除浮动 */
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+/* 版心 */
+.w{
+    width: 1190px;
+    margin: auto;
+}
+/* 京东顶部start */
+.J_event{
+    background-color: #eb8056;
+
+}
+.J_event a{
+    display: block;
+    height: 80px;
+    background: url(../images/top.jpg) no-repeat;
+    position: relative;
+}
+.J_event a i{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-family: "icomoon";
+    font-weight: bold;
+    font-size: 14px;
+    font-style: normal;
+    color: #FFF;
+    background: rgb(45,45,45);
+    opacity: .3;
+    filter: alpha(opacity=30);
+    width: 20px;
+    text-align: center;
+    line-height: 20px
+}
+.shortcut{
+    height: 30px;
+    line-height: 30px;
+    background-color: #E3e4e5;
+    font-size: 12px;
+    color: #9d9d9d;
+
+}
+.shortcut a{
+    font-size: 12px;
+    color: #9d9d9d;
+    text-decoration: none;
+    
+}
+.shortcut a:hover{
+    color: #c81623;
+}
+.shortcut .fl li{
+    margin-left: 200px;
+    height: 30px;
+}
+.shortcut .fr li{
+    float: left;
+    
+}
+.l_location{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 14px;
+    color: #f10215;
+}
+.l_location i{
+    font-family: "icomoon";
+    font-style: normal;
+}
+.spacer{
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 10px 10px 0;
+}
+.dropdown{
+    padding-right: 15px;
+    position: relative;
+}
+.dropdown i{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 14px;
+    position: absolute;
+    right: -1.5px;
+    top: -1.5px;
+}
+
+.mobile_qrcode{
+    height: 65px;
+    border: 1px solid #ccc;
+    position: absolute;
+    padding: 1px;
+    left: -6px;
+    top: 35px;
+    z-index: 1;
+
+}
+/* 京东顶部end */
+
+/* header start */
+.inner{
+    height: 140px;
+    position: relative;
+}
+.logo{
+    width: 190px;
+    height: 170px;
+    top: -30px;
+    left: 0;
+    position: absolute;
+    box-shadow: 0 0px 10px rgba(0,0,0,.2);
+}
+.logo h1{
+    margin: 0;
+}
+.logo a{
+    display: block;
+    width: 193px;
+    height: 170px;
+    background: url("../images/logo.png") no-repeat;
+    text-indent: -99999px;
+    overflow: hidden;
+    
+}
+.search{
+    width: 550px;
+    height: 35px;
+    top: 25px;
+    left: 350px;
+    position: absolute;
+}
+.search input{
+    width: 498px;
+    height: 35px;
+    border: 1px solid #f10215;
+    padding-left:  5px;
+    outline: none;
+    color: #989898;
+    float: left;
+}
+.search button{
+    font-family: "icomoon";
+    color: aliceblue;
+    width: 50px;
+    height: 35px;
+    background-color: #f10215;
+    float: left;
+    outline: none;
+}
+.search span{
+    font-family: "icomoon";
+    color: #d9d9d9;
+    width: 19px;
+    height: 15px;
+    position: absolute;
+    right: 65px;
+    top: 10px;
+    cursor: pointer;
+
+}
+.search span:hover{
+    color:#f10215;
+}
+/* hostwords部分 start */
+.hotwords{
+    overflow: hidden;
+    position: absolute;
+    left: 350px;
+    top: 60px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+.hotwords a{
+    font-size: 10px;
+    color: #999;
+    cursor: pointer;
+    margin-right: 19px;
+}
+.hotwords a:hover{
+    color: #f10215;
+}
+/* 购物车部分 start */
+.mycar{
+    position: absolute;
+    top: 25px;
+    right: 77px;
+    background-color: #FFF;
+}
+.mycar_inner{
+    width: 190px;
+    height: 35px;
+    border: 1px solid #e3e4e5;
+    line-height: 35px;
+    text-align: center;
+    
+}
+.mycar a{
+    font-size: 14px;
+    color: #f10215;
+    text-decoration: none;
+}
+.mycar i{
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 3px;
+}
+.mycar s{
+    text-decoration: none;
+    background-color: #f10215;
+    position: absolute;
+    top: 5px;
+    left: 143px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 7px;
+    padding: 0 3px;
+    font-size: 12px;
+    color: #FFF;
+
+}
+/* 购物车部分 end */
+/* navitems部分 start */
+.navitems{
+    width: 790px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+}
+.navitems ul{
+    float: left;
+}
+.navitems ul li{
+    float: left;
+    margin-left: 25px;
+    font-size: 14px;
+}
+.navitems li a{
+    text-decoration: none;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    color: #333;
+
+}
+.navitems .spacer{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -5px;
+}
+
+.navitems li a:hover{
+    color: #f10215;
+}
+/* navitems部分 end */
+
+/* hostwords部分 end */
+
+/* header end */
+
+/* footer部分 start  */
+.footer{
+    height: 560px;
+    background-color: #eaeaea;
+}
+
+/* footer-service部分 start */
+.footer-service{
+    border-bottom: 1px solid #dedede;
+}
+.footer-service-inner{
+    padding: 30px 0;
+}
+.footer-service-inner li{
+    float: left;
+    height:42px;
+    width:297px;
+}
+.footer-service-unit{
+    height: 42px;
+    width: 225px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer-service-unit h5{
+    width: 36px;
+    height: 42px;
+    background: url(../images/sprite.footer.png) no-repeat;
+    position: absolute;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.footer-service-unit p{
+    margin-left: 45px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer-service-unit .duo{
+    background-position: 0 -192px;
+}
+.footer-service-unit .kuai{
+    background-position: -41px -192px;
+}
+.footer-service-unit .hao{
+    background-position: -82px -192px;
+}
+.footer-service-unit .sheng{
+    background-position: -123px -192px;
+}
+/* footer-service部分 end */
+
+/* footer-help部分 start */
+.footer-help{
+    color: #666;
+    padding: 20px 0;
+    border-bottom: 1px solid #dedede;
+}
+
+.footer-help-list{
+    overflow: hidden;
+    height: 160px;
+}
+.footer-help-nav{
+    float: left;
+    width: 198px;  
+}
+.footer-help-nav h5{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.footer-help-nav a{
+    color: #727272;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footer-help-nav a:hover{
+    color: #f10215;
+}
+.footer-help-cover {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-image: url(../images/sprite.footer.png);
+}
+.footer-help-cover h5{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.footer-help-cover-cont{
+    padding: 0 10px;
+    font-size: 12px;
+    color: #727272;
+    line-height: 18px;
+}
+
+.footer-help-cover-cont p a{
+    color: #666;
+    text-decoration: none;
+    margin-right: 12px;
+}
+.footer-help-cover-more{
+    text-align: right;
+    position: relative;
+}
+.footer-help-cover-iconfont {
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    line-height: 20px;
+    right: 5px;
+}
+.footer-help-cover-more :hover{
+    color: #f10215;
+}
+/* footer-help部分 end */
+
+/* copyright start */
+.copyright{
+    padding: 15px 0;
+}
+    
+.links{
+    text-align: center;
+    color: #727272;
+    font-size: 12px;
+    
+}
+.links a{
+    text-decoration: none;
+    color: #727272;
+}
+.links a:hover{
+    color: #f10215;
+}
+.links span{
+    margin: 0 5px;
+}
+.copyright-info{
+    text-align: center;
+    color: #727272;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.copyright-info a{
+    color: #727272;
+}
+.copyright-info a:hover{
+    color: #f10215;
+}
+.copyright-spider{
+    margin: 0 10px;
+    color: #727272;
+}
+.copyright-info i{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background-image: url(../images/sprite.footer.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;   
+}
+.global{ 
+    background-position: -108px -155px;
+    vertical-align: -3px;
+}
+.cant{
+    background-position: -127px -155px;
+    vertical-align: -5px;
+}
+.stitus{
+    background-position: -148px -155px;
+    vertical-align: -5px;
+}
+.stitio{
+    background-position: -168px -155px;
+    vertical-align: -5px;
+}
+.ohter{
+    background-position: -108px -171px;
+    vertical-align: -5px;
+}
+.tupian{
+    padding: 10px  0;
+    text-align: center;
+}
+.tupian a{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-image: url(../images/sprite.footer.png);
+}
+.jubao{
+   
+    background-position: -510px 0px;
+    
+}
+.chengxin{
+    background-position: -510px -37px;
+}
+.police{
+    background-position: -510px -74px;
+}
+.xinyong{
+    background-position: -510px -111px;
+}
+.beian{
+    background-position: -510px -148px;
+}
+/* copyright end */
+
+/* footer部分 end  */
